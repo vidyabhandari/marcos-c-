@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+
+int CallMe(int n){
+if(n==0){
+return 0;
+}
+CallMe(n-1);
+cout<<"I am from CallMe function "<<n<<endl;
+return 0;
+}
+int main(){
+clrscr();
+CallMe(2);
+getch();
+return 0;
+}

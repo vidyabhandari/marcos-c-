@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+
+int main(){
+
+int x=42;
+char letter='A';
+double pie=3.14;
+clrscr();
+
+int *intPointer = &x;
+char *charPointer = &letter;
+double *doublePointer = &pie;
+
+cout<<"Int Pointer: "<<intPointer<<endl;
+cout<<"Char Pointer: "<<*charPointer<<endl;
+cout<<"Double Pointer: "<<*doublePointer<<endl;
+getch();
+return 0;
+}

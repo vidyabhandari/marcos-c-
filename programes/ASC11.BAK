@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+
+void valuebyadd(int a,int b){//a=10-->25 b=15
+	a=a+b; // a=10+15=25;
+	b=a-b;// b=25-15=10;
+	a=a-b;// a=25-10=15;
+	printf("The value of a after swapping is :%d\n",a);
+	printf("The value of b after swapping is :%d\n",b);
+}
+int main(){
+	int a,b;
+	clrscr();
+	printf("The value of a is:");
+	scanf("%d",&a);
+	printf("\nThe value of b is:");
+	scanf("%d",&b);
+	valuebyadd(a,b);
+getch();
+return 0;
+}

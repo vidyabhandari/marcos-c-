@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+int main(){
+
+int n;
+
+cout<<"enter a positive number: ";
+cin>>n;
+
+cout<<"Counting from 1 to "<<n<<":"<<endl;
+
+for(int i=1;i<=n;++i){
+	cout<<i<<" ";
+}
+cout<<endl;
+getch();
+return 0;
+}

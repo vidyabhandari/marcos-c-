@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+
+class Demo
+{
+		int n,l=0;
+		public:
+	Demo()
+		{
+		readNo();
+		}
+	void factorial()
+	{
+	int a=n;
+	int i=1;
+	while(a>0)
+	{
+		i=i*a;
+		a--;
+		l++;
+	}
+	cout<<"Factorial of "<<n<<"is"<<i;
+	private:
+	void readNo()
+	{
+	cout<<"Enter a number: ";
+	cin>>n;
+	}
+};
+
+int main()
+{
+clrscr();
+Demo d=demo();
+d.factorial();
+getch();
+return 0;
+}

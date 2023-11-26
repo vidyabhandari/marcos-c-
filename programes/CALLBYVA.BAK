@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+void modifyReference(int x){
+*x = *x + 10;
+printf("Inside Function: *x = %d\n",*x);
+}
+
+int main(){
+	int num = 5;
+	clrscr();
+	modifyReference(&num);
+	printf("Outside function: num = %d\n",num);
+getch();
+return 0;
+}
